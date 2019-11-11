@@ -24,6 +24,10 @@
 - Complete CRUD using Mongoose, Mongo and Express about movies
 - Create basic sign up and login using `express-session` and `connect-mongo`
 
+# Next day - day w5d1
+
+- Basics on authorisation and session flow using PassportJS
+
 # Goals
 
 - Create a sign up and login flow

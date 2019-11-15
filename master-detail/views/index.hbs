@@ -1,0 +1,27 @@
+<h1>All my movies ({{nMovies}})</h1>
+
+<ul class="options">
+    <li><button id="order-asc">Year ASC</button>
+    <li><button id="order-desc">Year DESC</button></li>
+    <li><a href="/create-movie">Create a new movie</a></li>
+    <li><a href="/add-director">Add director</a></li></li>
+</ul>
+
+<ul id="all-movies">
+    {{#each allMovies}}
+    <li>
+        <a href="{{../host}}/movie/{{_id}}">{{title}} ({{year}})</a>
+        <a href="{{../host}}/movie/delete/{{_id}}" class="small">Delete</a>
+    </li>
+    {{/each}}
+</ul>
+
+<script>
+    document.getElementById("order-asc").onclick = () => {
+        location.href = "{{host}}/master/asc"
+    }
+
+    document.getElementById("order-desc").onclick = () => {
+        location.href = "{{host}}/master/desc"
+    }
+</script>

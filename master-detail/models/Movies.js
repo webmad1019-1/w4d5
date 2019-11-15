@@ -6,7 +6,7 @@ const movieSchema = new Schema(
     title: String,
     year: Number,
     rate: Number,
-    director: String,
+    director: { type : Schema.Types.ObjectId, ref: 'Directors' },
     duration: String,
     genre: [String]
   },

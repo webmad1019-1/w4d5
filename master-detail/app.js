@@ -75,7 +75,11 @@ app.get("/master/:sortOrder?", (req, res) => {
 
 // get a specific movie
 app.get("/movie/:id", (req, res) => {
-  Movies.findById(req.params.id).then((oneMovie) => {
+  Movies
+  .findById(req.params.id)
+  .populate("director")
+  .then((oneMovie) => {
+    console.log(oneMovie)
     res.render("movie-detail", { oneMovie, host: process.env.HOST });
   });
 });

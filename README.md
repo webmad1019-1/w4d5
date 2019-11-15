@@ -39,3 +39,9 @@
 
 Alan Turing role in the WWII
 https://es.wikipedia.org/wiki/The_Imitation_Game
+
+Promises A+ standard
+https://promisesaplus.com
+
+More on hashing algorithms
+https://security.stackexchange.com/questions/193351/in-2018-what-is-the-recommended-hash-to-store-passwords-bcrypt-scrypt-argon2

@@ -10,7 +10,7 @@
 <ul id="all-movies">
     {{#each allMovies}}
     <li>
-        <a href="{{../host}}/movie/{{_id}}">{{title}} ({{year}})</a>
+        <a href="{{../host}}/movie/{{_id}}">{{title}} (({{year}})))</a>
         <a href="{{../host}}/movie/delete/{{_id}}" class="small">Delete</a>
     </li>
     {{/each}}

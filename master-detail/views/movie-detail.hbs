@@ -3,7 +3,8 @@
 <form action="/movie-update" method="POST">
     <input type="text" name="title" value="{{oneMovie.title}}">
     <input type="number" name="year" value="{{oneMovie.year}}">
-    <input type="text" name="director" value="{{oneMovie.director}}">
+    {{oneMovie.director.name}}
+    <input type="hidden" name="director" value="{{oneMovie.director._id}}">
     <input type="text" name="duration" value="{{oneMovie.duration}}">
     <input type="hidden" name="_id" value="{{oneMovie._id}}">
 
